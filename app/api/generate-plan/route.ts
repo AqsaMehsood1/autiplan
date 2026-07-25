@@ -71,7 +71,7 @@ export async function POST(req: Request) {
     ].join('\n')
 
     const { object } = await generateObject({
-      model: google('gemini-2.5-flash'),
+      model: google('gemini-flash-latest'),
       schema: planSchema,
       system: SYSTEM_PROMPT,
       prompt: userPrompt,
