@@ -1,33 +1,48 @@
-# autiplan
+# AutiPlan — Adaptive Lesson Planner for Autistic Children
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
+> **Live Deployed App:** https://autiplan.vercel.app  
+> **GitHub Repository:** https://github.com/AqsaMehsood1/autiplan
 
-## Built with v0
+---
 
-This repository is linked to a [v0](https://v0.app) project. You can continue developing by visiting the link below -- start new chats to make changes, and v0 will push commits directly to this repo. Every merge to `main` will automatically deploy.
+## 1. Project Overview & Problem Statement
+### What it does
+**AutiPlan** is an AI-powered educational app designed to generate sensory-friendly, structured, and customized lesson plans for children on the Autism Spectrum (ASD). 
 
-[Continue working on v0 →](https://v0.app/chat/projects/prj_tH7NUjQNQELSDGey9wkssrcNqivF)
+### The Real Problem it Solves
+Educators, occupational therapists, and parents of autistic children often spend hours adapting standard curriculum materials to fit the specific sensory needs, communication levels, and focus areas of individual neurodivergent children. Generic lesson plans fail because they don't account for sensory overload, motor difficulties, or transition anxieties. 
 
-## Getting Started
+**AutiPlan** solves this by instantly generating tailor-made activities complete with sensory accommodations, clear visual/tactile instructions, and transition strategies—ensuring every activity is safe, engaging, and supportive.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## 2. Key Features
+- **Sensory-Profile Customization:** Select specific sensory preferences or sensitivities (e.g., tactile seeker, noise-sensitive, visual learner).
+- **Targeted Skill Areas:** Customize activities focusing on social skills, emotional regulation, communication, or motor development.
+- **Instant AI Lesson Generation:** Generates a structured 5-part lesson plan in under 10 seconds.
+- **One-Click Printable Format:** Easily export or print plans for classroom and home use.
+- **Local Storage Management:** Save favorite plans locally to build an activity archive without needing an account.
+- **Calming Visual Theme:** Designed with soft, low-contrast colors to minimize visual fatigue.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 3. The AI Feature & Instructions
 
-## Learn More
+### Description
+The AI component acts as an expert Pediatric Occupational Therapist and Special Educator. It takes the parameters provided in the form and crafts a structured, step-by-step activity guide tailored precisely to the child's profile.
 
-To learn more, take a look at the following resources:
+### System Instructions / Prompt Engineering
+```text
+You are an expert pediatric occupational therapist and special education teacher specializing in Autism Spectrum Disorder (ASD). 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [v0 Documentation](https://v0.app/docs) - learn about v0 and how to use it.
+Your goal is to generate a structured, highly actionable, sensory-friendly lesson plan based on the user's inputs. 
+
+Always structure your output with the following clear headings:
+1. Lesson Title & Overview
+2. Core Objective
+3. Required Materials
+4. Sensory Accommodations & Safety Adjustments
+5. Step-by-Step Activity Breakdown
+6. Cool-Down & Transition Strategy (to avoid sensory overload)
+
+Tone: Professional, supportive, empathetic, and clear.
